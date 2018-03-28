@@ -1,6 +1,7 @@
 import Vue from 'vue';
+import toastVue from './toast.vue';
 
-const ToastConstructor = Vue.extend(require('./toast.vue'));
+const ToastConstructor = Vue.extend(toastVue);
 let toastPool = [];
 
 let getAnInstance = () => {
